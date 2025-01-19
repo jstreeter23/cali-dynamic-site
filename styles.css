@@ -1,0 +1,89 @@
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+section {
+    width: 70%; 
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  
+}
+
+
+aside {
+    width: 50%; 
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    align-self: flex-start; 
+   
+}
+
+
+header, nav, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    border-bottom: 2px solid #ccc;
+}
+
+
+img {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+
+footer {
+    position:relative;
+    padding: 15px;
+    background-color: #eee;
+    border-top: 2px solid #ccc;
+    margin-top: auto;
+    width: 100%;
+    
+}
+
+#state-title{
+    color: red;
+}
+
+.city-title{
+    color:blue;
+}
+
+div {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    overflow: auto;
+}
+
+table{
+    float: left;
+}

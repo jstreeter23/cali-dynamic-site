@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="capital.html">Sacramento</a>
+        <a href="city1.html">Los Angeles</a>
+        <a href="city2.html">San Diego</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <section>
+        <h2>Get in Touch</h2>
+        <form action="#" method="post" onsubmit="return validateEmails()">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="confirm-email">Confirm Email Address:</label>
+            <input type="email" id="confirm-email" name="confirm-email" required>
+
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question"  required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+<img src="CAmap.jpg" alt="California map" width="500" height="300" >
+    <section id="contact-section">
+        <aside>
+        <h2 >California Cities Review</h2>
+
+        <div>
+        <table >
+            <tr>
+                <th>City Name</th>
+                <th>Region</th>
+                <th>Population</th>
+            </tr>
+            <tr>
+                <td>Los Angeles</td>
+                <td>Southern California</td>
+                <td>3.9 million</td>
+            </tr>
+            <tr>
+                <td>San Diego</td>
+                <td>Southern California</td>
+                <td>1.4 million</td>
+            </tr>
+            <tr>
+                <td>Sacramento</td>
+                <td>Northern California</td>
+                <td>500,000</td>
+            </tr>
+        </table>
+    </div>
+    </aside>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Explore California. All rights reserved.</p>
+    </footer>
+    <script>
+        function validateEmails() {
+            const email = document.getElementById('email').value;
+            const confirmEmail = document.getElementById('confirm-email').value;
+
+            if (email !== confirmEmail) {
+             alert('The email addresses do not match. Please check and try again.');
+             return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
